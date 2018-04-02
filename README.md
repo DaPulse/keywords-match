@@ -1,9 +1,9 @@
-# keywords-match
+### keywords-match
 Adwords-like keywords matcher
 
 usage
 
-##Installation
+## Installation
 
 ```sh
 npm i keywords-match
