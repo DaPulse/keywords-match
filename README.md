@@ -5,3 +5,6 @@ usage
 
 installation
 
+```sh
+npm i keywords-match
+```
