@@ -1,6 +1,9 @@
 # keywords-match
 Adwords-like keywords matcher
+
+[![Build Status](https://travis-ci.org/DaPulse/keywords-match.svg?branch=master)](https://travis-ci.org/DaPulse/keywords-match)
 [![Coverage Status](https://coveralls.io/repos/github/DaPulse/keywords-match/badge.svg?branch=master)](https://coveralls.io/github/DaPulse/keywords-match?branch=master)
+
 ## Usage
 ```sh
 const matcher = require('keywords-matcher');
