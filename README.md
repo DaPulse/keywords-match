@@ -9,6 +9,11 @@ const expression = 'cat -fish';
 const result = matcher(expression, collection);
 console.log(result); // ['cat', 'sandcat']
 ```
+## Supported operators
+* ' ' (space) - Means both expressions are required
+* '|' (pipeline) - Means at least one expression is required
+* '-' (dash) - Means the following expression must not be met
+* expression - The filtered string contains the expression
 
 ## Installation
 
@@ -16,7 +21,7 @@ console.log(result); // ['cat', 'sandcat']
 npm i keywords-match
 ```
 
-## Keywod matches
+## Keyword matches
 
 Broad match
 Broad match is the default match type that all your keywords are assigned. Ads may show on searches that include misspellings, synonyms, related searches, and other relevant variations. So if your keyword is “women’s hats,” someone searching for “buy ladies hats” might see your ad. 
