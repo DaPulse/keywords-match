@@ -1,8 +1,5 @@
 const match = require('./index');
-
-it('dummy', () => {
-  expect(1).toBe(1);
-});
+const data = require('./data');
 
 it('filters broad', () => {
   const input = [
@@ -36,4 +33,10 @@ it('filters or', () => {
   const result = match(keyword, input);
   expect(result).toContain('efg');
   expect(result).toContain('abc');
+});
+
+it('filters from property', () => {
+  const keyword = 'the';
+  const result = match(keyword, data, e => e.title);
+  expect(result.length).toBe(10);
 });
