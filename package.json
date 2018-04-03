@@ -4,7 +4,8 @@
   "description": "Adwords-like keyword matching",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watchAll"
   },
   "author": "Eran Ben-Moha",
   "license": "MIT",

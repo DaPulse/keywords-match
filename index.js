@@ -1,22 +1,23 @@
 const { PASS, UNKNOWN, FAIL } = require('./status');
 const Filter = require('./filter');
 
-const ResearchFilter = (filterString, collection, filterBy = e => e) => {
+const defaultMap = e => e;
+
+const ResearchFilter = (filterString, collection, filterBy = defaultMap) => {
   const filters = filterString.split(' ');
-  const requirements = filters.reduce((r, f) => { r[f] = UNKNOWN; return r; }, {});
+  const requirements = filters.reduce((r, f) => { r[f] = UNKNOWN; return r; }, {}); // eslint-disable-line no-param-reassign
   const requirementsKeys = Object.keys(requirements);
 
   return collection.filter((element) => {
-    requirementsKeys.forEach(key => requirements[key] = UNKNOWN);
+    requirementsKeys.forEach((key) => { requirements[key] = UNKNOWN; });
 
     const targets = filterBy(element).split(' ');
     targets.forEach(target =>
       requirementsKeys.forEach((key) => {
         if (requirements[key] === FAIL) return;
-        const test = (new Filter(key)).matches(target);
+        const test = Filter(key).matches(target);
         if (test !== UNKNOWN) requirements[key] = test;
-      }),
-    );
+      }));
 
     return requirementsKeys.every(key => requirements[key] === PASS);
   });
