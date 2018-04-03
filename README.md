@@ -1,6 +1,6 @@
 # keywords-match
 Adwords-like keywords matcher
-
+[![Coverage Status](https://coveralls.io/repos/github/DaPulse/keywords-match/badge.svg?branch=master)](https://coveralls.io/github/DaPulse/keywords-match?branch=master)
 ## Usage
 ```sh
 const matcher = require('keywords-matcher');
