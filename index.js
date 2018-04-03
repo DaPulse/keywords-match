@@ -19,6 +19,7 @@ const ResearchFilter = (filterString, collection, filterBy = defaultMap) => {
         if (test !== UNKNOWN) requirements[key] = test;
       }));
 
+    // Assert all the requirements are met
     return requirementsKeys.every(key => requirements[key] === PASS);
   });
 };
