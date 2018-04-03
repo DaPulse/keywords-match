@@ -1,6 +1,6 @@
 {
   "name": "keywords-match",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Adwords-like keyword matching",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,16 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3"
-  }
+  },
+  "repository": {
+    "url": "git@github.com:DaPulse/keywords-match.git",
+    "type": "git"
+  },
+  "keywords": [
+    "filter",
+    "search",
+    "match",
+    "adwords",
+    "find"
+  ]
 }
