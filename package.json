@@ -1,6 +1,6 @@
 {
   "name": "keywords-match",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adwords-like keyword matching",
   "main": "index.js",
   "scripts": {
