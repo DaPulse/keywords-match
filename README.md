@@ -1,7 +1,7 @@
 # keywords-match
 Adwords-like keywords matcher
 
-usage
+## Usage
 ```sh
 const matcher = require('keywords-matcher');
 const collection = ['cat', 'lion', 'sandcat', 'catfish'];
