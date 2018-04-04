@@ -1,8 +1,4 @@
-# keywords-match
-Super simple keywords matcher
-
-[![Build Status](https://travis-ci.org/DaPulse/keywords-match.svg?branch=master)](https://travis-ci.org/DaPulse/keywords-match)
-[![Coverage Status](https://coveralls.io/repos/github/DaPulse/keywords-match/badge.svg?branch=master)](https://coveralls.io/github/DaPulse/keywords-match?branch=master)
+# keywords-match [![Build Status](https://travis-ci.org/DaPulse/keywords-match.svg?branch=master)](https://travis-ci.org/DaPulse/keywords-match)
 
 ## Demo
 [Try it out on CodeSandBox](https://codesandbox.io/s/wkjpqyy62k)
