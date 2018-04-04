@@ -3,7 +3,7 @@ const Filter = require('./filter');
 
 const defaultMap = e => e;
 
-const ResearchFilter = (filterString, collection, filterBy = defaultMap) => {
+const Matcher = (filterString, collection, filterBy = defaultMap) => {
   const filters = filterString.split(' ');
   const requirements = filters.reduce((r, f) => { r[f] = UNKNOWN; return r; }, {}); // eslint-disable-line no-param-reassign
   const requirementsKeys = Object.keys(requirements);
@@ -24,4 +24,4 @@ const ResearchFilter = (filterString, collection, filterBy = defaultMap) => {
   });
 };
 
-module.exports = ResearchFilter;
+module.exports = Matcher;
